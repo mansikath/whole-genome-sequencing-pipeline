@@ -13,7 +13,7 @@ sudo apt install fastqc
 #### For macOS
 brew install fastqc
 
-#### Step 3: Trimming with Trimmomatic
+### Step 3: Trimming with Trimmomatic
 ##### Assuming you have already downloaded and extracted Trimmomatic
 java -jar trimmomatic-0.39.jar PE -phred33 SRR26624132_1.fastq SRR26624132_2.fastq trim1_paired.fastq trim1_unpaired.fastq trim2_paired.fastq trim2_unpaired.fastq ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 
@@ -37,8 +37,7 @@ cut -f 2 blast_result.txt | sort | uniq | head -n 10 > top_gene_ids.txt
 Add the Gene List to PANTHER for Annotation
 Visit the PANTHER website (https://www.pantherdb.org/) and upload the gene list for functional annotation.
 
-------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------>>>
 
 ### Downloading Data
 - Use wget to download data from SRA.
