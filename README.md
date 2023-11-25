@@ -33,8 +33,9 @@ blastp -query ./velvet_output/contigs.fa -db ref_genome -out blast_result.txt -e
 ### Step 8: Extract Top Gene IDs from BLAST Results and Annotate in UniProt
 cut -f 2 blast_result.txt | sort | uniq | head -n 10 > top_gene_ids.txt
 
-### Step 9: Add the Gene List to PANTHER for Annotation
-### Step 10: Visit the PANTHER website (https://www.pantherdb.org/) and upload the gene list for functional annotation.
+### Step 9: Annotation
+Add the Gene List to PANTHER for Annotation
+Visit the PANTHER website (https://www.pantherdb.org/) and upload the gene list for functional annotation.
 
 ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
