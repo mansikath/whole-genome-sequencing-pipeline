@@ -1,0 +1,6 @@
+###exmple
+
+contig_id   subject_id   % identity   alignment length   mismatches   gaps   q. start   q. end   s. start   s. end   evalue   bit score
+contig1     subject1     98.2         500               2            0     1          500      1          500      1e-150   500
+contig2     subject2     92.5         450               5            2     10         460      20         470      1e-120   450
+contig3     subject3     88.3         600               8            1     5          505      10         610      1e-90    400
