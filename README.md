@@ -2,12 +2,12 @@
 A comprehensive workflow for de novo assembly of whole-genome shotgun sequencing data using Velvet, followed by BLAST searches to analyze assembled contigs.
 
 # WGS Data Analysis Workflow
-# Step 1: Download and Extract Data
+## Step 1: Download and Extract Data
 wget https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR26624132/SRR26624132
 ./sratoolkit.3.0.7-mac64/bin/fastq-dump --split-files SRR26624132
 fastqc SRR26624132_1.fastq SRR26624132_2.fastq
 
-# Step 2: Install FastQC
+### Step 2: Install FastQC
 # For Ubuntu
 sudo apt install fastqc
 # For macOS
