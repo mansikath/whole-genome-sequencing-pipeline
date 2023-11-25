@@ -14,16 +14,34 @@ sudo apt install fastqc
 brew install fastqc
 
 ### Step 3: Trimming with Trimmomatic
+#### Download Trimmomatic
+http://www.usadellab.org/cms/?page=trimmomatic
 ##### Assuming you have already downloaded and extracted Trimmomatic
 java -jar trimmomatic-0.39.jar PE -phred33 SRR26624132_1.fastq SRR26624132_2.fastq trim1_paired.fastq trim1_unpaired.fastq trim2_paired.fastq trim2_unpaired.fastq ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 
 ### Step 4: Install Velvet
-brew install velvet
+brew install velvet 
+or sudo apt-get install velvet
+
+      or
+####
+https://github.com/dzerbino/velvet
 
 ### Step 5: Velvet Assembly
 velvetg ./velvet_output -clean yes -exp_cov 21 -cov_cutoff 2.81 -min_contig_lgth 200
 
 ### Step 6: Download and Prepare Reference Genome for BLAST
+brew install blast
+or sudo apt-get install ncbi-blast+
+
+        or
+##### blast executables
+https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
+
+
+#### Downaload Reference genome from NCBI GENOME
+https://www.ncbi.nlm.nih.gov/genome/
+
 #### Assuming you have downloaded and extracted refgenome.zip
 makeblastdb -in ref_genome -dbtype prot(rename GCF_000183385.1_ASM18338v1_genomic.fna as ref_genome)  
 
