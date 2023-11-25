@@ -4,6 +4,7 @@ A comprehensive workflow for de novo assembly of whole-genome shotgun sequencing
 ## WGS Data Analysis Workflow
 ### Step 1: Download and Extract Data
 wget https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR26624132/SRR26624132
+
 ./sratoolkit.3.0.7-mac64/bin/fastq-dump --split-files SRR26624132
 fastqc SRR26624132_1.fastq SRR26624132_2.fastq
 
@@ -21,9 +22,8 @@ java -jar trimmomatic-0.39.jar PE -phred33 SRR26624132_1.fastq SRR26624132_2.fas
 
 ### Step 4: Install Velvet
 brew install velvet 
-or sudo apt-get install velvet
+sudo apt-get install velvet
 
-      or
 ####
 https://github.com/dzerbino/velvet
 
@@ -32,9 +32,8 @@ velvetg ./velvet_output -clean yes -exp_cov 21 -cov_cutoff 2.81 -min_contig_lgth
 
 ### Step 6: Download and Prepare Reference Genome for BLAST
 brew install blast
-or sudo apt-get install ncbi-blast+
+sudo apt-get install ncbi-blast+
 
-        or
 ##### blast executables
 https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 
