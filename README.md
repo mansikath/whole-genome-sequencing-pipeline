@@ -1,12 +1,12 @@
 ## WGS Data Analysis Workflow
-
 ## Downloading Data
-### Use wget to download data from SRA.
-wget https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR26624132/SRR26624132
-
-### Use fastq-dump to convert SRA to fastq
 ### Download and install SRA Toolkit
 #### https://github.com/ncbi/sra-tools
+
+#### Downloading Data
+### Use wget to download data from SRA.
+wget https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR26624132/SRR26624132
+#### Use fastq-dump to convert SRA to fastq
 ./sratoolkit.3.0.7-mac64/bin/fastq-dump --split-files SRR26624132
 
 ## Quality Control
