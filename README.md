@@ -27,7 +27,7 @@ java -jar trimmomatic-0.39.jar PE -phred33 SRR26624132_1.fastq SRR26624132_2.fas
 ```
 ### Step 4: Genome Assembly
 Use Velvet for de novo genome assembly:
-- [Velvet](http://www.ebi.ac.uk/~zerbino/velvet/)
+- [Velvet](https://github.com/dzerbino/velvet)
 or
 Install Velvet (For macOS): brew install velvet
 Install Velvet (For Ubuntu): sudo apt-get install velvet
