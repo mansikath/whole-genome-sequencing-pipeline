@@ -5,6 +5,7 @@
 
 #### Downloading Data
 ### Use wget to download data from SRA.
+```bash
 wget https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR26624132/SRR26624132
 #### Use fastq-dump to convert SRA to fastq
 ./sratoolkit.3.0.7-mac64/bin/fastq-dump --split-files SRR26624132
@@ -42,3 +43,4 @@ cut -f 2 blast_result.txt | sort | uniq | head -n 10 > top_gene_ids.txt
 ### Annotate genes using UniProt and PANTHER databases.
 #### Add the Gene List to PANTHER for Annotation
 #### Visit the PANTHER website (https://www.pantherdb.org/) and upload the gene list for functional annotation.
+```
